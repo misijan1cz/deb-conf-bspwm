@@ -27,9 +27,11 @@ mkdir -p /home/$username/.fonts
 mkdir -p /home/$username/Pictures
 mkdir -p /etc/X11/xdm
 mkdir -p /etc/lightdm
+mkdir -p /usr/share/backgrounds
 cp config-xdm/.xsession /home/$username
 cp config-xdm/Xresources config-xdm/Xsetup /etc/X11/xdm/
 cp config-lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
+cp background.jpg /usr/share/backgrounds/
 cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
