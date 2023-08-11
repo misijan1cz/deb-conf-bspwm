@@ -32,14 +32,18 @@ cp background.jpg /home/$username/Pictures/
 mv user-dirs.dirs /home/$username/.config
 chown -R $username:$username /home/$username
 
-# Installing Essential Programs 
+# Essential Packages 
 nala install feh bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit x11-xserver-utils unzip yad wget pulseaudio pavucontrol -y
-# Installing Other less important Programs
-nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
-# Workstation packages
-#nala install virt-manager
-# Tablet packages
-#nala install iio-sensors
+# Basic Packages
+nala install flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
+# Workstation Packages
+#nala install virt-manager gnome-disks gedit onlyoffice-desktopeditors
+# Tablet Packages
+#nala install iio-sensor-proxy
+# Media Packages
+#nala install vlc lmms
+# Additional Packages
+nala install neofetch tmux
 
 # Installing LightDM display manager
 nala install lightdm -y
