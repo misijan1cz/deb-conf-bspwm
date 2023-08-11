@@ -29,7 +29,7 @@ mkdir -p /etc/X11/xdm
 mkdir -p /etc/lightdm
 cp config-xdm/.xsession /home/$username
 cp config-xdm/Xresources config-xdm/Xsetup /etc/X11/xdm/
-cp config-lightdm/lightdm.conf /etc/lightdm/
+cp config-lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
 cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
