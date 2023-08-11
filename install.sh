@@ -6,9 +6,9 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-# Change Debian to SID Branch
-cp /etc/apt/sources.list /etc/apt/sources.list.bak
-cp sources.list /etc/apt/sources.list
+### Change Debian to SID Branch
+##cp /etc/apt/sources.list /etc/apt/sources.list.bak
+##cp sources.list /etc/apt/sources.list
 
 username=$(id -u -n 1000)
 builddir=$(pwd)
@@ -25,22 +25,23 @@ cd $builddir
 mkdir -p /home/$username/.config
 mkdir -p /home/$username/.fonts
 mkdir -p /home/$username/Pictures
-mkdir -p /usr/share/sddm/themes
+##mkdir -p /usr/share/sddm/themes
 cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
 cp bg.jpg /home/$username/Pictures/
 mv user-dirs.dirs /home/$username/.config
 chown -R $username:$username /home/$username
-tar -xzvf sugar-candy.tar.gz -C /usr/share/sddm/themes
-mv /home/$username/.config/sddm.conf /etc/sddm.conf
+##tar -xzvf sugar-candy.tar.gz -C /usr/share/sddm/themes
+##mv /home/$username/.config/sddm.conf /etc/sddm.conf
 
 # Installing sugar-candy dependencies
 nala install libqt5svg5 qml-module-qtquick-controls qml-module-qtquick-controls2 -y
 # Installing Essential Programs 
 nala install feh bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit x11-xserver-utils unzip yad wget pulseaudio pavucontrol -y
 # Installing Other less important Programs
-nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji sddm -y
+##nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji sddm -y
+nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr lightdm -y
 
 # Download Nordic Theme
 cd /usr/share/themes/
@@ -68,15 +69,15 @@ cd Nordzy-cursors
 cd $builddir
 rm -rf Nordzy-cursors
 
-# Install brave-browser
-nala install apt-transport-https curl -y
-curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
-nala update
-nala install brave-browser -y
+### Install brave-browser
+##nala install apt-transport-https curl -y
+##curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+##echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
+##nala update
+##nala install brave-browser -y
 
 # Enable graphical login and change target from CLI to GUI
-systemctl enable sddm
+systemctl enable lightdm
 systemctl set-default graphical.target
 
 # Beautiful bash
