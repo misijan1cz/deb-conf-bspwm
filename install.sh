@@ -25,6 +25,9 @@ cd $builddir
 mkdir -p /home/$username/.config
 mkdir -p /home/$username/.fonts
 mkdir -p /home/$username/Pictures
+mkdir -p /etc/X11/xdm
+cp config-xdm/.xsession /home/$username
+cp config-xdm/Xresources config-xdm/Xsetup /etc/X11/xdm/
 cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
@@ -41,7 +44,6 @@ nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-th
 nala install lightdm -y
 ### Installing XDM display manager
 ##nala install xdm xorg -y
-##cp config-xdm/* /etc/X11/xdm/
 
 # Download Nordic Theme
 cd /usr/share/themes/
