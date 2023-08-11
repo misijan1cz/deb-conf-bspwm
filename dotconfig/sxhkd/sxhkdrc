@@ -3,11 +3,11 @@
 #
 
 # terminal emulator
-super + x
+super + Return
 	kitty 
 
 # program launcher
-super + r
+super + d
 	rofi -show drun
 
 # make sxhkd reload its configuration files:
@@ -15,8 +15,8 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # My program Hotkeys
-super + b
-	brave-browser
+super + w
+	firefox-esr
 
 super + p 
 	flameshot full -p /home/titus/SynologyDrive/Screenshots/
