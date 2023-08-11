@@ -26,8 +26,10 @@ mkdir -p /home/$username/.config
 mkdir -p /home/$username/.fonts
 mkdir -p /home/$username/Pictures
 mkdir -p /etc/X11/xdm
+mkdir -p /etc/lightdm
 cp config-xdm/.xsession /home/$username
 cp config-xdm/Xresources config-xdm/Xsetup /etc/X11/xdm/
+cp config-lightdm/lightdm.conf /etc/lightdm/
 cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
@@ -81,6 +83,10 @@ git clone https://github.com/ChrisTitusTech/mybash
 cd mybash
 bash setup.sh
 cd $builddir
+
+# Update GRUB background
+echo "GRUB_BACKGROUND=/home/mj/Pictures/background.jpg" >> /etc/default/grub
+update-grub
 
 # Polybar configuration
 bash scripts/changeinterface
