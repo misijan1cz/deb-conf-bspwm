@@ -25,13 +25,6 @@ cd $builddir
 mkdir -p /home/$username/.config
 mkdir -p /home/$username/.fonts
 mkdir -p /home/$username/Pictures
-mkdir -p /etc/X11/xdm
-mkdir -p /etc/lightdm
-mkdir -p /usr/share/backgrounds
-cp config-xdm/.xsession /home/$username
-cp config-xdm/Xresources config-xdm/Xsetup /etc/X11/xdm/
-cp config-lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
-cp background.jpg /usr/share/backgrounds/
 cp .Xresources /home/$username
 cp .Xnord /home/$username
 cp -R dotconfig/* /home/$username/.config/
@@ -43,11 +36,27 @@ chown -R $username:$username /home/$username
 nala install feh bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit x11-xserver-utils unzip yad wget pulseaudio pavucontrol -y
 # Installing Other less important Programs
 nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
+# Workstation packages
+#nala install virt-manager
+# Tablet packages
+#nala install iio-sensors
 
 # Installing LightDM display manager
 nala install lightdm -y
-### Installing XDM display manager
-##nala install xdm xorg -y
+systemctl enable lightdm
+### OR ###
+# Installing XDM display manager
+#nala install xdm xorg -y
+#systemctl enable xdm.service
+
+# Theming display managers
+mkdir -p /etc/X11/xdm
+mkdir -p /etc/lightdm
+mkdir -p /usr/share/backgrounds
+cp config-xdm/.xsession /home/$username
+cp config-xdm/Xresources config-xdm/Xsetup /etc/X11/xdm/
+cp config-lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
+cp background.jpg /usr/share/backgrounds/
 
 # Download Nordic Theme
 cd /usr/share/themes/
@@ -75,9 +84,7 @@ cd Nordzy-cursors
 cd $builddir
 rm -rf Nordzy-cursors
 
-# Enable graphical login and change target from CLI to GUI
-systemctl enable lightdm
-##systemctl enable xdm.service
+# Change target from CLI to GUI
 systemctl set-default graphical.target
 
 # Beautiful bash
