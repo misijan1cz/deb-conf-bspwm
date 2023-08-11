@@ -25,7 +25,7 @@ done &
 xsetroot -cursor_name left_ptr
 
 #Set Keyboard Layout
-setxkbmap -layout us
+setxkbmap -layout cz -variant qwerty
 
 #Monitor Config
 bspc config remove_unplugged_monitors true
