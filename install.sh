@@ -40,7 +40,7 @@ nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-th
 # Installing LightDM display manager
 nala install lightdm -y
 ### Installing XDM display manager
-##nala install xdm xorg
+##nala install xdm xorg -y
 ##cp config-xdm/* /etc/X11/xdm/
 
 # Download Nordic Theme
