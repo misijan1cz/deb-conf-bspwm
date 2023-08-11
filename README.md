@@ -1,18 +1,17 @@
 # debian-bspwm
 
 Debian BSPWM + lightdm desktop configuration, fork of Debian-titus bspwm branch.   
-Tested for **Debian 12 (bookworm)**
+Tested for **Debian 12 (bookworm)**.
 
 ## Usage
 
 - Create (almost) minimal installation of Debian stable.
   - run Debian NetInstall image
-  - (optional) disable root user by leaving root password empty (creating root user is generally discouraged for security reasons)
   - when selecting packages, uncheck "Desktop enviroment" and "GNOME" (leave only "Essential packages" checked)
   - finish installation
 - Install git: `sudo apt install git`
-- Clone branch: `git clone https://github.com/misijan1cz/deb-conf --branch bspwm-desktop`
-- Go to the cloned directory: `cd bspwm-desktop`
+- Clone branch: `git clone https://github.com/misijan1cz/debian-bspwm`
+- Go to the cloned directory: `cd debian-bspwm`
 - Run install script as root: `sudo su` and `./install.sh`
 
 ## Reminder
