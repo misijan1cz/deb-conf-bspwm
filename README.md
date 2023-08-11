@@ -1,5 +1,5 @@
 # Debian-titus
-Fork of Debian customizations from Chris Titus Tech
+Fork of debian customizations from Chris Titus Tech
  
 ## Requirements
 _This install changes Debian to the SID (Dev) Branch_
