@@ -1,6 +1,6 @@
 # debian-bspwm
 
-Debian BSPWM + lightdm desktop configuration, fork of Debian-titus bspwm branch.  
+Debian BSPWM + lightdm desktop configuration, fork of Debian-titus bspwm branch.   
 Tested for **Debian 12 (bookworm)**
 
 ## Usage
