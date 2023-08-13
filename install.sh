@@ -39,7 +39,7 @@ chown -R $username:$username /home/$username
 # Essential Packages 
 nala install feh bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit x11-xserver-utils unzip yad wget curl -y
 # Basic Packages
-nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
+nala install neofetch flameshot psmisc vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
 # Other Packages
 #nala install virt-manager gnome-disks gedit onlyoffice-desktopeditors -y                             # ... workstation
 #nala install iio-sensor-proxy -y                                                                     # ... tablet
