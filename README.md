@@ -1,7 +1,5 @@
 # debian-bspwm
 
-**Unmaintained!**
-
 Minimal Debian BSPWM desktop configuration, fork of Debian-titus bspwm branch.   
 Tested on **Debian 12 (bookworm)**.
 
