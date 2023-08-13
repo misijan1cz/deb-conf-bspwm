@@ -1,5 +1,7 @@
 # debian-bspwm
 
+**Unmaintained!**
+
 Debian BSPWM + lightdm desktop configuration, fork of Debian-titus bspwm branch.   
 Tested on **Debian 12 (bookworm)**.
 
@@ -10,8 +12,8 @@ Tested on **Debian 12 (bookworm)**.
   - when selecting packages, uncheck "Desktop enviroment" and "GNOME" (leave only "Essential packages" checked)
   - finish installation
 - Install git: `sudo apt install git`
-- Clone branch: `git clone https://github.com/misijan1cz/debian-bspwm`
-- Go to the cloned directory: `cd debian-bspwm`
+- Clone branch: `git clone https://github.com/misijan1cz/debian-bspwm-config`
+- Go to the cloned directory: `cd debian-bspwm-config`
 - Run install script as root: `sudo su` and `./install.sh`
 
 ## Reminder
@@ -20,6 +22,14 @@ This repository is for my personal use but feel free to clone it.
 
 This repository only contains *dotfiles* and other files for quick post-install configuration of **Debian**.   
 This repository is **not a distribution**.
+
+## Screenshots
+
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/screenshot-bspwm.png?raw=true)
+
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/screenshot-lightdm.png?raw=true)
+
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/screenshot-grub.png?raw=true)
 
 ## Sources
 
