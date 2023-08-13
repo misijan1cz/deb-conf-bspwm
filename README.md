@@ -2,7 +2,7 @@
 
 **Unmaintained!**
 
-Debian BSPWM + lightdm desktop configuration, fork of Debian-titus bspwm branch.   
+Minimal Debian BSPWM desktop configuration, fork of Debian-titus bspwm branch.   
 Tested on **Debian 12 (bookworm)**.
 
 ## Usage
