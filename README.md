@@ -18,7 +18,8 @@ Tested on **Debian 12 (bookworm)**.
 
 ## Reminder
 
-This repository is for my personal use but feel free to clone it.
+This repository is for my personal use but feel free to clone it.   
+Keyboard layout is cz (qwerty) by default. You can change it in `.config/bspwm/bspwmrc` file.
 
 This repository only contains *dotfiles* and other files for quick post-install configuration of **Debian**.   
 This repository is **not a distribution**.
