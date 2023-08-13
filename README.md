@@ -1,4 +1,4 @@
-# debian-bspwm
+# debian-bspwm-config
 
 Minimal Debian BSPWM desktop configuration, fork of Debian-titus bspwm branch.   
 Tested on **Debian 12 (bookworm)**.
