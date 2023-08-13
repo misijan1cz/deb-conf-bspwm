@@ -32,26 +32,30 @@ cp background.jpg /home/$username/Pictures/
 mv user-dirs.dirs /home/$username/.config
 chown -R $username:$username /home/$username
 
-# Essential Packages 
-nala install feh bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit x11-xserver-utils unzip yad wget pulseaudio pavucontrol -y
-# Basic Packages
-nala install flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
-# Workstation Packages
-#nala install virt-manager gnome-disks gedit onlyoffice-desktopeditors
-# Tablet Packages
-#nala install iio-sensor-proxy
-# Media Packages
-#nala install vlc lmms
-# Additional Packages
-nala install neofetch tmux
+##############################
+### CONFIGURE INSTALLATION ###
+##############################
 
-# Installing LightDM display manager
-nala install lightdm -y
-systemctl enable lightdm
-### OR ###
-# Installing XDM display manager
-#nala install xdm xorg -y
-#systemctl enable xdm.service
+# Essential Packages 
+nala install feh bspwm sxhkd kitty rofi polybar picom thunar nitrogen lxpolkit x11-xserver-utils unzip yad wget curl -y
+# Basic Packages
+nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxappearance fonts-noto-color-emoji firefox-esr -y
+# Other Packages
+#nala install virt-manager gnome-disks gedit onlyoffice-desktopeditors -y                             # ... workstation
+#nala install iio-sensor-proxy -y                                                                     # ... tablet
+#nala install vlc lmms -y                                                                             # ... media
+
+# Sound system: pulse OR pipewire
+nala install pulseaudio pavucontrol -y
+#nala install pipewire{,-{audio,pulse,alsa}} libspa-0.2-bluetooth wireplumber pavucontrol -y
+
+# Display manager: LightDM OR XDM
+nala install lightdm -y && systemctl enable lightdm
+#nala install xdm xorg -y && systemctl enable xdm.service
+
+############################
+### END OF CONFIGURATION ###
+############################
 
 # Theming display managers
 mkdir -p /etc/X11/xdm
