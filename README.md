@@ -29,7 +29,9 @@ This repository is **not a distribution**.
 
 ![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-lightdm.png?raw=true)
 
-![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-grub.png?raw=true)
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-neofetch.png?raw=true)
+
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-bootloader.png?raw=true)
 
 ## Sources
 
