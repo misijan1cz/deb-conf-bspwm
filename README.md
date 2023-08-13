@@ -18,7 +18,7 @@ Tested on **Debian 12 (bookworm)**.
 
 This repository is for my personal use but feel free to clone it.
 
-This repository only contains *dotfiles* and other files for configuration of a minimal install of **Debian** with only *"Essential packages"* installed.   
+This repository only contains *dotfiles* and other files for quick post-install configuration of **Debian**.   
 This repository is **not a distribution**.
 
 ## Sources
