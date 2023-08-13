@@ -25,11 +25,11 @@ This repository is **not a distribution**.
 
 ## Screenshots
 
-![alt text](https://github.com/misijan1cz/debian-bspwm-config/screenshot-bspwm.png?raw=true)
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-bspwm.png?raw=true)
 
-![alt text](https://github.com/misijan1cz/debian-bspwm-config/screenshot-lightdm.png?raw=true)
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-lightdm.png?raw=true)
 
-![alt text](https://github.com/misijan1cz/debian-bspwm-config/screenshot-grub.png?raw=true)
+![alt text](https://github.com/misijan1cz/debian-bspwm-config/blob/main/screenshot-grub.png?raw=true)
 
 ## Sources
 
